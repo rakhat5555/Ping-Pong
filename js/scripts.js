@@ -1,6 +1,5 @@
 var pingPong = function(number) {
   if (number % 15 === 0){
-
   return "PingPong";
 } else if (number % 5 === 0) {
   return "Pong";
@@ -14,7 +13,7 @@ var pingPong = function(number) {
 
 $(document).ready(function() {
   // debugger;
-  $("form#pingpong").submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var result = pingPong(number);
